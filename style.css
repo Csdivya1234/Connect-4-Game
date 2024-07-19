@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0; /* Light grey background */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 36px;
+    color: #333;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#board {
+    height: 540px;
+    width: 630px;
+    background-color: #007bff; /* Bright blue background */
+    border: 10px solid #0056b3; /* Dark blue border */
+    border-radius: 15px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.tile {
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid #0056b3; /* Dark blue border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+    transition: transform 0.2s, background-color 0.2s; /* Smooth transition */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tile:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    cursor: pointer;
+}
+
+.red-piece {
+    background-color: red;
+}
+
+.yellow-piece {
+    background-color: yellow;
+}
+
+.red-piece, .yellow-piece {
+    transition: background-color 0.2s;
+}
+
+#winner {
+    font-size: 24px;
+    color: #333;
+}
